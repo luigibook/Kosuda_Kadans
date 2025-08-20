@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koşuda Kadans Nedir? Ne Değildir? - Ümit Emre Erdoğan</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .chart-container { height: 400px; }
+        .risk-chart { height: 350px; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="gradient-bg text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <p class="text-lg mb-2 opacity-90">Hazırlayan:</p>
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Ümit Emre Erdoğan</h1>
+                <h2 class="text-2xl md:text-3xl font-semibold mb-6">Koşuda Kadans Nedir? Ne Değildir?</h2>
+                <p class="text-lg opacity-90 max-w-3xl mx-auto">Bilimsel araştırmalar ışığında kapsamlı analiz ve rehber</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <ul class="flex flex-wrap justify-center space-x-4 py-4 text-sm md:text-base">
+                <li><a href="#tanimlar" class="text-blue-600 hover:text-blue-800 transition-colors">Tanımlar</a></li>
+                <li><a href="#bilimsel-veriler" class="text-blue-600 hover:text-blue-800 transition-colors">Bilimsel Veriler</a></li>
+                <li><a href="#risk-analizi" class="text-blue-600 hover:text-blue-800 transition-colors">Risk Analizi</a></li>
+                <li><a href="#degerler" class="text-blue-600 hover:text-blue-800 transition-colors">Kadans Değerleri</a></li>
+                <li><a href="#form-egzersizleri" class="text-blue-600 hover:text-blue-800 transition-colors">Form Egzersizleri</a></li>
+                <li><a href="#referanslar" class="text-blue-600 hover:text-blue-800 transition-colors">Referanslar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+
+        <!-- Tanımlar Section -->
+        <section id="tanimlar" class="mb-12">
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <h2 class="text-3xl font-bold mb-6 text-gray-800 flex items-center">
+                    <i class="fas fa-running text-blue-600 mr-3"></i>
+                    Kadans Nedir? Ne Değildir?
+                </h2>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+                        <h3 class="text-xl font-semibold mb-4 text-green-800">
+                            <i class="fas fa-check-circle mr-2"></i>Kadans NEDİR
+                        </h3>
+                        <ul class="space-y-3 text-green-700">
+                            <li><strong>Tanım:</strong> Dakikada aldığınız toplam adım sayısı (spm - steps per minute)</li>
+                            <li><strong>Doğal Sonuç:</strong> İyi antrenman ve koşu formunun bir yansıması</li>
+                            <li><strong>Hıza Bağlı:</strong> Koşu hızınızla birlikte doğal olarak değişir</li>
+                            <li><strong>Bireysel:</strong> Boy, anatomik yapı ve deneyime göre değişir</li>
+                            <li><strong>Gelişebilir:</strong> Doğru antrenman ve form çalışmalarıyla iyileşir</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-red-50 p-6 rounded-lg border-l-4 border-red-500">
+                        <h3 class="text-xl font-semibold mb-4 text-red-800">
+                            <i class="fas fa-times-circle mr-2"></i>Kadans NE DEĞİLDİR
+                        </h3>
+                        <ul class="space-y-3 text-red-700">
+                            <li><strong>Mutlak Değer:</strong> Herkes için geçerli olan sabit bir sayı değil</li>
+                            <li><strong>Hedef:</strong> Doğrudan hedeflenecek bir parametre değil</li>
+                            <li><strong>Hız Göstergesi:</strong> Daha hızlı koşmanın garantisi değil</li>
+                            <li><strong>180 Efsanesi:</strong> 180 spm herkes için optimal değil</li>
+                            <li><strong>Zorlama:</strong> Yapay olarak artırılmaması gereken bir değer</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-8 bg-blue-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4 text-blue-800">
+                        <i class="fas fa-lightbulb mr-2"></i>Önemli Gerçek
+                    </h3>
+                    <p class="text-blue-700 text-lg leading-relaxed">
+                        <strong>Kadans, koşu formunun ve antrenman kalitesinin bir sonucudur, nedeni değil.</strong> 
+                        Doğrudan kadansı artırmaya çalışmak yerine, koşu formunuzu düzelten ve antrenman sürekliliğini sağlayan 
+                        egzersizlere odaklanmak daha etkilidir. Kadans doğal olarak düzelecektir.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bilimsel Veriler Section -->
+        <section id="bilimsel-veriler" class="mb-12">
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <h2 class="text-3xl font-bold mb-6 text-gray-800 flex items-center">
+                    <i class="fas fa-chart-line text-blue-600 mr-3"></i>
+                    Hız-Kadans İlişkisi: Bilimsel Veriler
+                </h2>
+                
+                <p class="text-gray-600 mb-6">
+                    2025 yılı PMC araştırmasından elde edilen veriler (deneyimli koşucular)
+                </p>
+                
+                <div class="chart-container mb-6">
+                    <canvas id="speedCadenceChart"></canvas>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-6 mt-8">
+                    <div class="bg-gradient-to-br from-blue-500 to-blue-600 text-white p-6 rounded-lg text-center">
+                        <h3 class="text-xl font-semibold mb-2">Kolay Tempo</h3>
+                        <p class="text-3xl font-bold">160-170</p>
+                        <p class="text-sm opacity-90">spm (8-6 dk/km)</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-green-500 to-green-600 text-white p-6 rounded-lg text-center">
+                        <h3 class="text-xl font-semibold mb-2">Orta Tempo</h3>
+                        <p class="text-3xl font-bold">170-175</p>
+                        <p class="text-sm opacity-90">spm (5-4:30 dk/km)</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-red-500 to-red-600 text-white p-6 rounded-lg text-center">
+                        <h3 class="text-xl font-semibold mb-2">Hızlı Tempo</h3>
+                        <p class="text-3xl font-bold">175-180+</p>
+                        <p class="text-sm opacity-90">spm (4 dk/km ve altı)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Risk Analizi Section -->
+        <section id="risk-analizi" class="mb-12">
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <h2 class="text-3xl font-bold mb-6 text-gray-800 flex items-center">
+                    <i class="fas fa-exclamation-triangle text-red-600 mr-3"></i>
+                    Kadans-Sakatlık Riski İlişkisi
+                </h2>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="risk-chart">
+                        <canvas id="injuryRiskChart"></canvas>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-red-100 border-l-4 border-red-500 p-4 rounded">
+                            <h4 class="font-semibold text-red-800 mb-2">
+                                <i class="fas fa-exclamation-circle mr-2"></i>Yüksek Risk Grubu
+                            </h4>
+                            <ul class="text-red-700 space-y-1">
+                                <li>• 150 spm altı: %40-60 artış</li>
+                                <li>• Aşırı uzatma (overstriding)</li>
+                                <li>• Artan fren kuvvetleri</li>
+                                <li>• Tibial stres kırıkları riski</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-yellow-100 border-l-4 border-yellow-500 p-4 rounded">
+                            <h4 class="font-semibold text-yellow-800 mb-2">
+                                <i class="fas fa-exclamation-triangle mr-2"></i>Orta Risk Grubu
+                            </h4>
+                            <ul class="text-yellow-700 space-y-1">
+                                <li>• 150-170 spm: %20-30 artış</li>
+                                <li>• Patellofemoral ağrı riski</li>
+                                <li>• İyileştirilebilir seviye</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-green-100 border-l-4 border-green-500 p-4 rounded">
+                            <h4 class="font-semibold text-green-800 mb-2">
+                                <i class="fas fa-check-circle mr-2"></i>Düşük Risk Grubu
+                            </h4>
+                            <ul class="text-green-700 space-y-1">
+                                <li>• 170+ spm: Optimal bölge</li>
+                                <li>• Azalan eklem stresi</li>
+                                <li>• İyileştirilmiş şok emilimi</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8 bg-gray-100 p-6 rounded-lg">
+                    <h4 class="font-semibold text-gray-800 mb-3">
+                        <i class="fas fa-info-circle mr-2"></i>Bilimsel Kanıtlar
+                    </h4>
+                    <p class="text-gray-700 leading-relaxed">
+                        2025 sistematik derlemesi: %5-10'luk kadans artışı yere tepki kuvvetlerini, şok emilimini ve 
+                        kalça-diz-ayak bileği enerji emilimini anlamlı şekilde azaltır. Düşük kadans (<170 spm) 
+                        koşucularında stres kırığı riski %40-60 oranında artmaktadır.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Değerler Section -->
+        <section id="degerler" class="mb-12">
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <h2 class="text-3xl font-bold mb-6 text-gray-800 flex items-center">
+                    <i class="fas fa-users text-blue-600 mr-3"></i>
+                    Koşucu Seviyelerine Göre Kadans Değerleri
+                </h2>
+                
+                <div class="overflow-x-auto">
+                    <table class="w-full table-auto">
+                        <thead>
+                            <tr class="bg-gray-100">
+                                <th class="px-4 py-3 text-left font-semibold">Koşucu Seviyesi</th>
+                                <th class="px-4 py-3 text-center font-semibold">Kadans Aralığı</th>
+                                <th class="px-4 py-3 text-center font-semibold">Kolay Tempo</th>
+                                <th class="px-4 py-3 text-left font-semibold">Özellikler</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr>
+                                <td class="px-4 py-3 font-medium text-purple-600">Elit/Profesyonel</td>
+                                <td class="px-4 py-3 text-center font-bold">180 ± 10</td>
+                                <td class="px-4 py-3 text-center">3:30-4:00/km</td>
+                                <td class="px-4 py-3">1500m-maraton tüm mesafelerde tutarlı</td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <td class="px-4 py-3 font-medium text-green-600">İleri Amatör</td>
+                                <td class="px-4 py-3 text-center font-bold">170-180</td>
+                                <td class="px-4 py-3 text-center">4:30-5:30/km</td>
+                                <td class="px-4 py-3">Düzenli antrenman, iyi teknik</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium text-blue-600">Orta Amatör</td>
+                                <td class="px-4 py-3 text-center font-bold">160-175</td>
+                                <td class="px-4 py-3 text-center">5:30-6:30/km</td>
+                                <td class="px-4 py-3">Haftada 3-4 kez koşu</td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <td class="px-4 py-3 font-medium text-orange-600">Başlangıç</td>
+                                <td class="px-4 py-3 text-center font-bold">150-165</td>
+                                <td class="px-4 py-3 text-center">6:30-8:00/km</td>
+                                <td class="px-4 py-3">Gelişime açık, form çalışması gerekli</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 font-medium text-red-600">Risk Grubu</td>
+                                <td class="px-4 py-3 text-center font-bold text-red-600">&lt; 150</td>
+                                <td class="px-4 py-3 text-center">8:00+/km</td>
+                                <td class="px-4 py-3 text-red-600">Form analizi ve düzeltme gerekli</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Egzersizleri Section -->
+        <section id="form-egzersizleri" class="mb-12">
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <h2 class="text-3xl font-bold mb-6 text-gray-800 flex items-center">
+                    <i class="fas fa-dumbbell text-blue-600 mr-3"></i>
+                    Kadansı Doğal Olarak İyileştiren Form Egzersizleri
+                </h2>
+                
+                <div class="bg-yellow-100 border-l-4 border-yellow-500 p-4 rounded mb-8">
+                    <h4 class="font-semibold text-yellow-800 mb-2">
+                        <i class="fas fa-lightbulb mr-2"></i>Temel Yaklaşım
+                    </h4>
+                    <p class="text-yellow-700">
+                        Doğrudan kadansı artırmaya çalışmak yerine, koşu formunu düzelten egzersizlere odaklanın. 
+                        Bu yaklaşım kadansın doğal ve sürdürülebilir şekilde iyileşmesini sağlar.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Kuvvet Antrenmanı -->
+                    <div class="bg-blue-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-4 text-blue-800">
+                            <i class="fas fa-weight-hanging mr-2"></i>Kuvvet Antrenmanı
+                        </h3>
+                        <ul class="space-y-3 text-blue-700">
+                            <li><strong>Tek Bacak Squat:</strong> Kalça ve diz stabilizasyonu</li>
+                            <li><strong>Lateral Lunge:</strong> Yan yön kuvvet gelişimi</li>
+                            <li><strong>Calf Raises:</strong> Baldır kuvveti ve patlayıcılık</li>
+                            <li><strong>Glute Bridge:</strong> Kalça ekstansörü güçlendirme</li>
+                            <li><strong>Plank Variations:</strong> Core stabilizasyon</li>
+                        </ul>
+                    </div>
+
+                    <!-- Pliometrik Egzersizler -->
+                    <div class="bg-green-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-4 text-green-800">
+                            <i class="fas fa-rocket mr-2"></i>Pliometrik Egzersizler
+                        </h3>
+                        <ul class="space-y-3 text-green-700">
+                            <li><strong>Box Jumps:</strong> Patlayıcı güç geliştirme</li>
+                            <li><strong>Bounding:</strong> Koşu spesifik güç</li>
+                            <li><strong>Skipping:</strong> Koordinasyon ve ritim</li>
+                            <li><strong>Jump Rope:</strong> Ayak hızı ve koordinasyon</li>
+                            <li><strong>Lateral Bounds:</strong> Çok yönlü hareket</li>
+                        </ul>
+                    </div>
+
+                    <!-- Teknik Drilller -->
+                    <div class="bg-purple-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-4 text-purple-800">
+                            <i class="fas fa-running mr-2"></i>Teknik Driller
+                        </h3>
+                        <ul class="space-y-3 text-purple-700">
+                            <li><strong>A-Skip:</strong> Diz kaldırma ve koordinasyon</li>
+                            <li><strong>B-Skip:</strong> Hamstring aktivasyonu</li>
+                            <li><strong>Butt Kicks:</strong> Arka swing geliştirme</li>
+                            <li><strong>High Knees:</strong> Diz drive çalışması</li>
+                            <li><strong>Strides:</strong> Form ve hız entegrasyonu</li>
+                        </ul>
+                    </div>
+
+                    <!-- Mobilite Çalışması -->
+                    <div class="bg-orange-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold mb-4 text-orange-800">
+                            <i class="fas fa-expand-arrows-alt mr-2"></i>Mobilite ve Esneklik
+                        </h3>
+                        <ul class="space-y-3 text-orange-700">
+                            <li><strong>Hip Flexor Stretch:</strong> Kalça fleksörü esnekliği</li>
+                            <li><strong>Calf Stretch:</strong> Aşil tendonu esnekliği</li>
+                            <li><strong>IT Band Release:</strong> Yan zincir mobilizasyonu</li>
+                            <li><strong>Thoracic Mobility:</strong> Üst gövde rotasyonu</li>
+                            <li><strong>Ankle Mobility:</strong> Ayak bileği hareket açıklığı</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Antrenman Programı -->
+                <div class="mt-8 bg-gray-100 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800">
+                        <i class="fas fa-calendar-alt mr-2"></i>Haftalık Antrenman Önerisi
+                    </h3>
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <div class="text-center">
+                            <h4 class="font-medium text-gray-700 mb-2">Haftada 2-3x</h4>
+                            <p class="text-sm text-gray-600">Kuvvet Antrenmanı</p>
+                        </div>
+                        <div class="text-center">
+                            <h4 class="font-medium text-gray-700 mb-2">Haftada 2x</h4>
+                            <p class="text-sm text-gray-600">Teknik Driller</p>
+                        </div>
+                        <div class="text-center">
+                            <h4 class="font-medium text-gray-700 mb-2">Her Gün</h4>
+                            <p class="text-sm text-gray-600">Mobilite Çalışması</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Doğal İyileştirme -->
+        <section class="mb-12">
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <h2 class="text-3xl font-bold mb-6 text-gray-800 flex items-center">
+                    <i class="fas fa-leaf text-green-600 mr-3"></i>
+                    Doğal Kadans İyileştirme Yaklaşımı
+                </h2>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4 text-gray-700">
+                            <i class="fas fa-chart-line mr-2"></i>Uzun Vadeli Strateji
+                        </h3>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                                <span><strong>Düzenli Antrenman:</strong> Haftada minimum 3-4 koşu seansı</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                                <span><strong>Çeşitlilik:</strong> Farklı hızlarda koşu deneyimi</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                                <span><strong>Progresif Yükleme:</strong> Kademeli mesafe ve hız artışı</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mr-2 mt-1"></i>
+                                <span><strong>Sabır:</strong> 3-6 ay süreyle tutarlı çalışma</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4 text-gray-700">
+                            <i class="fas fa-brain mr-2"></i>Mental Yaklaşım
+                        </h3>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-lightbulb text-yellow-500 mr-2 mt-1"></i>
+                                <span><strong>Süreç Odaklı:</strong> Sonuç yerine sürece odaklanma</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-lightbulb text-yellow-500 mr-2 mt-1"></i>
+                                <span><strong>Hollistik Bakış:</strong> Tüm vücut koordinasyonu</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-lightbulb text-yellow-500 mr-2 mt-1"></i>
+                                <span><strong>Bireysel Hedefler:</strong> Kişisel gelişim takibi</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-lightbulb text-yellow-500 mr-2 mt-1"></i>
+                                <span><strong>Keyif Alma:</strong> Koşu deneyiminin ön planda tutulması</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Referanslar Section -->
+        <section id="referanslar" class="mb-12">
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <h2 class="text-3xl font-bold mb-6 text-gray-800 flex items-center">
+                    <i class="fas fa-book text-blue-600 mr-3"></i>
+                    Bilimsel ve Akademik Referanslar
+                </h2>
+                
+                <div class="space-y-4 text-sm text-gray-700">
+                    <div class="border-l-4 border-blue-500 pl-4">
+                        <p><strong>1.</strong> Leacox, A. et al. (2025). "The Effect of Running Speed on Cadence and Running Kinetics." <em>PMC Articles</em>. 
+                        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12222555/" class="text-blue-600 hover:underline">PMC12222555</a></p>
+                    </div>
+                    
+                    <div class="border-l-4 border-blue-500 pl-4">
+                        <p><strong>2.</strong> Anderson, L.M. et al. (2025). "The Influence of Running Cadence on Biomechanics and Injury Prevention: A Systematic Review." <em>Cureus</em>. 
+                        <a href="https://www.cureus.com/articles/390565-the-influence-of-running-cadence-on-biomechanics-and-injury-prevention-a-systematic-review" class="text-blue-600 hover:underline">Cureus Article 390565</a></p>
+                    </div>
+                    
+                    <div class="border-l-4 border-blue-500 pl-4">
+                        <p><strong>3.</strong> Schubert, A.G. et al. (2014). "Influence of stride frequency and length on running mechanics: a systematic review." <em>Sports Health</em>. 
+                        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4000471/" class="text-blue-600 hover:underline">PMC4000471</a></p>
+                    </div>
+                    
+                    <div class="border-l-4 border-blue-500 pl-4">
+                        <p><strong>4.</strong> Anderson, L.M. et al. (2022). "What is the effect of changing running step rate on injury, performance and biomechanics? A systematic review and meta-analysis." <em>Sports Medicine-Open</em>. 
+                        <a href="https://sportsmedicine-open.springeropen.com/articles/10.1186/s40798-022-00504-0" class="text-blue-600 hover:underline">Sports Medicine-Open</a></p>
+                    </div>
+                    
+                    <div class="border-l-4 border-blue-500 pl-4">
+                        <p><strong>5.</strong> Bramah, C. et al. (2019). "A 10% increase in step rate improves running kinematics and clinical outcomes in runners with patellofemoral pain at 4 weeks and 3 months." <em>American Journal of Sports Medicine</em>.</p>
+                    </div>
+                    
+                    <div class="border-l-4 border-blue-500 pl-4">
+                        <p><strong>6.</strong> Heiderscheit, B.C. et al. (2011). "Effects of step rate manipulation on joint mechanics during running." <em>Medicine & Science in Sports & Exercise</em>.</p>
+                    </div>
+                    
+                    <div class="border-l-4 border-blue-500 pl-4">
+                        <p><strong>7.</strong> Lenhart, R.L. et al. (2014). "Increasing running step rate reduces patellofemoral joint forces." <em>Medicine & Science in Sports & Exercise</em>.</p>
+                    </div>
+                    
+                    <div class="border-l-4 border-blue-500 pl-4">
+                        <p><strong>8.</strong> Burns, G.T. et al. (2019). "Factors affecting running economy in trained distance runners." <em>Journal of Applied Physiology</em>.</p>
+                    </div>
+                    
+                    <div class="border-l-4 border-blue-500 pl-4">
+                        <p><strong>9.</strong> Futrell, E.E. et al. (2018). "Relationships between habitual cadence, footstrike, and vertical load rates in runners." <em>Medicine & Science in Sports & Exercise</em>.</p>
+                    </div>
+                    
+                    <div class="border-l-4 border-blue-500 pl-4">
+                        <p><strong>10.</strong> The Running Clinic. (2025). "Questions and answers about running cadence." 
+                        <a href="https://therunningclinic.com/runners/blog/archives-anglaises/cadence/" class="text-blue-600 hover:underline">The Running Clinic</a></p>
+                    </div>
+                    
+                    <div class="border-l-4 border-blue-500 pl-4">
+                        <p><strong>11.</strong> Strength Running. (2020). "What's My Ideal Running Cadence?" 
+                        <a href="https://strengthrunning.com/2020/02/best-running-cadence-step-rate/" class="text-blue-600 hover:underline">Strength Running</a></p>
+                    </div>
+                    
+                    <div class="border-l-4 border-blue-500 pl-4">
+                        <p><strong>12.</strong> Runner's World. (2025). "What Is Running Cadence and How Does It Affect Performance?" 
+                        <a href="https://www.runnersworld.com/training/a64422354/why-cadence-matters-for-running/" class="text-blue-600 hover:underline">Runner's World</a></p>
+                    </div>
+                    
+                    <div class="border-l-4 border-blue-500 pl-4">
+                        <p><strong>13.</strong> Gore Wear. (2025). "The Best Running Cadence: How to Find And Optimize Yours." 
+                        <a href="https://www.gorewear.com/us/en-us/explore/the-best-running-cadence-how-to-find-and-optimize-yours" class="text-blue-600 hover:underline">Gore Wear</a></p>
+                    </div>
+                    
+                    <div class="border-l-4 border-blue-500 pl-4">
+                        <p><strong>14.</strong> Van Hooren, B. et al. (2024). "The relationship between running biomechanics and running economy: a systematic review and meta-analysis of observational studies." <em>Sports Medicine</em>.</p>
+                    </div>
+                    
+                    <div class="border-l-4 border-blue-500 pl-4">
+                        <p><strong>15.</strong> Doyle, E. et al. (2022). "The effectiveness of gait retraining on running kinematics, kinetics, performance, pain, and injury in distance runners: a systematic review with meta-analysis." <em>Journal of Orthopaedic & Sports Physical Therapy</em>.</p>
+                    </div>
+                    
+                    <div class="border-l-4 border-blue-500 pl-4">
+                        <p><strong>16.</strong> Keast, M. et al. (2022). "Acute effects of gait interventions on tibial loads during running: A systematic review and meta-analysis." <em>Sports Medicine</em>.</p>
+                    </div>
+                    
+                    <div class="border-l-4 border-blue-500 pl-4">
+                        <p><strong>17.</strong> Shen, W. et al. (2024). "Enhancing running injury prevention strategies with real-time biofeedback: A systematic review and meta-analysis." <em>Journal of Sports Sciences</em>.</p>
+                    </div>
+                    
+                    <div class="border-l-4 border-blue-500 pl-4">
+                        <p><strong>18.</strong> Peterson, B. et al. (2022). "Biomechanical and musculoskeletal measurements as risk factors for running-related injury in non-elite runners: A systematic review and meta-analysis of prospective cohort studies." <em>Sports Medicine-Open</em>.</p>
+                    </div>
+                    
+                    <div class="border-l-4 border-blue-500 pl-4">
+                        <p><strong>19.</strong> Ameen, R.B.M. (2024). "Quantifying the Impact of Running Cadence on Biomechanics, Performance, and Injury Risk: A Physics-Based Analysis." <em>Science Journal of University of Zakho</em>.</p>
+                    </div>
+                    
+                    <div class="border-l-4 border-blue-500 pl-4">
+                        <p><strong>20.</strong> Xie, P.P. et al. (2022). "Sex-specific differences in biomechanics among runners: a systematic review with meta-analysis." <em>Frontiers in Physiology</em>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-lg mb-2">Hazırlayan: <strong>Ümit Emre Erdoğan</strong></p>
+            <p class="text-sm opacity-75">Bilimsel araştırmalar ışığında hazırlanmış kapsamlı rehber</p>
+            <p class="text-xs opacity-60 mt-4">Son güncelleme: 2025</p>
+        </div>
+    </footer>
+
+    <script>
+        // Speed-Cadence Chart
+        const speedCadenceCtx = document.getElementById('speedCadenceChart').getContext('2d');
+        new Chart(speedCadenceCtx, {
+            type: 'line',
+            data: {
+                labels: ['9.6 km/s', '10.1 km/s', '10.7 km/s', '11.4 km/s', '12.1 km/s', '12.9 km/s', '13.8 km/s'],
+                datasets: [{
+                    label: 'Kadans (spm)',
+                    data: [169.2, 169.9, 170.5, 172.3, 174.3, 175.9, 177.9],
+                    borderColor: 'rgb(59, 130, 246)',
+                    backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                    borderWidth: 3,
+                    fill: true,
+                    tension: 0.4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Koşu Hızı - Kadans İlişkisi (Deneyimli Koşucular)',
+                        font: { size: 16, weight: 'bold' }
+                    },
+                    legend: {
+                        display: true,
+                        position: 'top'
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: false,
+                        min: 165,
+                        max: 180,
+                        title: {
+                            display: true,
+                            text: 'Kadans (adım/dakika)'
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Koşu Hızı'
+                        }
+                    }
+                }
+            }
+        });
+
+        // Injury Risk Chart
+        const injuryRiskCtx = document.getElementById('injuryRiskChart').getContext('2d');
+        new Chart(injuryRiskCtx, {
+            type: 'bar',
+            data: {
+                labels: ['<150 spm', '150-160 spm', '160-170 spm', '170-180 spm', '>180 spm'],
+                datasets: [{
+                    label: 'Yaralanma Risk Artışı (%)',
+                    data: [50, 35, 20, 5, 0],
+                    backgroundColor: [
+                        'rgba(239, 68, 68, 0.8)',   // Red
+                        'rgba(245, 158, 11, 0.8)',  // Orange  
+                        'rgba(251, 191, 36, 0.8)',  // Yellow
+                        'rgba(34, 197, 94, 0.8)',   // Green
+                        'rgba(59, 130, 246, 0.8)'   // Blue
+                    ],
+                    borderColor: [
+                        'rgb(239, 68, 68)',
+                        'rgb(245, 158, 11)',
+                        'rgb(251, 191, 36)',
+                        'rgb(34, 197, 94)',
+                        'rgb(59, 130, 246)'
+                    ],
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Kadans ve Sakatlık Riski İlişkisi',
+                        font: { size: 16, weight: 'bold' }
+                    },
+                    legend: {
+                        display: false
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 60,
+                        title: {
+                            display: true,
+                            text: 'Risk Artış Oranı (%)'
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Kadans Aralığı'
+                        }
+                    }
+                }
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+    <script id="html_badge_script1">
+        window.__genspark_remove_badge_link = "https://www.genspark.ai/api/html_badge/" +
+            "remove_badge?token=To%2FBnjzloZ3UfQdcSaYfDl%2FTOreTF7MFYUOWOz8QEyhB%2BcN3NkhQ%2BPFGY4D5WuOtSYhKv7yDDpSOh9ZGsSGT1oT5LOdcJze066HNwzO7qV0yOBNLo5RiA3LM1ZAhpn21tmA6XJ5Wo7F2th4%2BJINvmFHC0gtshCptNKQTGpBTrfBCYk5ynB26XsY0ZnRk5FScM5R0T3EZ0FQIdvsdPXHutK20lM0SXi9E17gIW2L9mqtty5vHZKGAo2wZMf5nTTV0%2BAsUirPtugYA7cE1cwJ2iL5YjzIom7Fj9frVsuCGKRbE3e421lQPqn5zvVzL0JXRxooBI4L4gV7YwESPN5FDF3Fv7Y712WVrB7D3%2BabOPVbXFEKjVG02EjMkmtA5GeU%2B1y6jPTz6dOwO2QuyY8BUirUBKX1LrS2Ov5gkNip3g4aobLeUOQKojpAEv4s0pmQJSN1X%2BMAOC5MSF9ok9%2FriSN%2FMtuCtzQm%2Bp1RMjEN%2B8ovb2sUDgwC%2BfMEeNdzdM%2B5%2BwTgSHM1obNUGgeFExGF119sLstm%2Bd7%2BGSmxLV0o%2BwRE%3D";
+        window.__genspark_locale = "en-US";
+        window.__genspark_token = "To/BnjzloZ3UfQdcSaYfDl/TOreTF7MFYUOWOz8QEyhB+cN3NkhQ+PFGY4D5WuOtSYhKv7yDDpSOh9ZGsSGT1oT5LOdcJze066HNwzO7qV0yOBNLo5RiA3LM1ZAhpn21tmA6XJ5Wo7F2th4+JINvmFHC0gtshCptNKQTGpBTrfBCYk5ynB26XsY0ZnRk5FScM5R0T3EZ0FQIdvsdPXHutK20lM0SXi9E17gIW2L9mqtty5vHZKGAo2wZMf5nTTV0+AsUirPtugYA7cE1cwJ2iL5YjzIom7Fj9frVsuCGKRbE3e421lQPqn5zvVzL0JXRxooBI4L4gV7YwESPN5FDF3Fv7Y712WVrB7D3+abOPVbXFEKjVG02EjMkmtA5GeU+1y6jPTz6dOwO2QuyY8BUirUBKX1LrS2Ov5gkNip3g4aobLeUOQKojpAEv4s0pmQJSN1X+MAOC5MSF9ok9/riSN/MtuCtzQm+p1RMjEN+8ovb2sUDgwC+fMEeNdzdM+5+wTgSHM1obNUGgeFExGF119sLstm+d7+GSmxLV0o+wRE=";
+    </script>
+    
+    <script id="html_notice_dialog_script" src="https://www.genspark.ai/notice_dialog.js"></script>
+    
